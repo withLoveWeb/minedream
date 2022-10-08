@@ -1,5 +1,6 @@
 @import "vars";
 @import "vendor/reset";
+@import "vendor/fonts";
 
 html{
   font-size: 62.5%;
@@ -13,15 +14,27 @@ html{
 }
 
 body {
-    background-color: black;
+    background-color: $secondary-c;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 2rem;
-    line-height: 2.4rem;
-    color: white;
+    line-height: 2.5rem;
+    color: #e2eff1;
+}
+
+a{
+color: $white;
+  text-decoration: none;
 }
 
 .page{
   overflow: hidden;
+}
+
+.container{
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .main{
@@ -31,3 +44,5 @@ body {
 /*Blocks*/
 @import "blocks/header";
 @import "blocks/name";
+@import "blocks/ip";
+@import "blocks/mods";

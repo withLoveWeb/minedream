@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="assets/css/style.min.css">
   
-  <!-- Useful meta tags -->
+  
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="robots" content="index, follow">
@@ -22,34 +22,43 @@
 
     <header class="header">
     
-      <hav class="header__nav">
+      <div class="container">
     
-        <a href="" class="header__homepage-link">Домой</a>
+        <nav class="header__nav">
     
-        <ul class="header__list">
+          <a href="" class="header__homepage-link">
+            <svg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='32' height='32' stroke='none' fill='#000000' opacity='0'/>
+              <g transform="matrix(1.17 0 0 1.17 16 16)" >
+              <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(243, 248, 248); fill-rule: nonzero; opacity: 1;" transform=" translate(-15, -14)" d="M 15 2 C 14.738616616041034 2.0000170332757876 14.487629291287826 2.102374937987746 14.300781 2.2851562 L 3.3925781 11.207031 C 3.379979168591223 11.216502838696485 3.367605944514148 11.226271234914845 3.3554688 11.236328 L 3.3183594 11.267578 L 3.3183594 11.269531 C 3.1156231051862937 11.458399982398525 3.0003377184318 11.722919896612362 3 12 C 3 12.552284749830793 3.4477152501692068 13 4 13 L 5 13 L 5 24 C 5 25.105 5.895 26 7 26 L 23 26 C 24.105 26 25 25.105 25 24 L 25 13 L 26 13 C 26.552284749830793 13 27 12.552284749830793 27 12 C 27.000204143761316 11.722240715294262 26.884873922007287 11.456910092703003 26.681641 11.267578 L 26.666016 11.255859 C 26.644079027217867 11.23597635563134 26.621269890183697 11.217077737702501 26.597656 11.199219 L 23 8.2558594 L 23 4 C 23 3.448 22.552 3 22 3 L 21 3 C 20.448 3 20 3.448 20 4 L 20 5.8027344 L 15.677734 2.2675781 C 15.493513229271993 2.096326111219646 15.251523198290794 2.000785334589153 15 2 z M 12 16 L 18 16 L 18 24 L 12 24 L 12 16 z" stroke-linecap="round" />
+              </g>
+              </svg>
+          </a>
     
-          <li class="header__list-item">
-            <a href="" class="header__list-link">Карта</a>
-          </li>
-          <li class="header__list-item">
-            <a href="" class="header__list-link">О сервере</a>
-          </li>
-          <li class="header__list-item">
-            <a href="" class="header__list-link">Поддержать</a>
-          </li>
+          <ul class="header__list">
     
-        </ul>
+            <li class="header__list-item">
+              <a href="" class="header__list-link">Карта</a>
+            </li>
+            <li class="header__list-item">
+              <a href="" class="header__list-link">О сервере</a>
+            </li>
+            <li class="header__list-item">
+              <a href="" class="header__list-link">Поддержать</a>
+            </li>
     
-        <div class="header__reg">
-          <a href="" class="header__signin">Вход</a>
-          <span>/</span>
-          <a href="" class="header__login">Регистрация</a>
-        </div>
+          </ul>
     
-      </hav>
+          <div class="header__reg">
+            <a href="" class="header__signin">Вход</a>
+            <span>/</span>
+            <a href="" class="header__login">Регистрация</a>
+          </div>
+    
+        </nav>
+    
+      </div>
     
     </header>
-
 
     <main class="main">
     
@@ -57,6 +66,37 @@
         <h1 class="name__text">MineDream</h1>
       </section>
       
+      <section class="ip">
+    
+        <div class="container">
+    
+        <div class="ip__wrapper">
+    
+          <div class="ip__slider">
+            slider
+            <img src="" alt="">
+          </div>
+      
+          <div class="ip__text">
+            <h3 class="ip__title">Ip</h3>
+            <div class="ip__copybar">
+              <input type="text" value="192.332.2.31" readonly="" class="ip__input">
+              <button class="ip__copy-btn">
+                <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+                  <g transform="matrix(1 0 0 1 12 12)" >
+                  <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(85, 82, 115); fill-rule: nonzero; opacity: 1;" transform=" translate(-12, -12)" d="M 4 2 C 2.895 2 2 2.895 2 4 L 2 18 L 4 18 L 4 4 L 18 4 L 18 2 L 4 2 z M 8 6 C 6.895 6 6 6.895 6 8 L 6 20 C 6 21.105 6.895 22 8 22 L 20 22 C 21.105 22 22 21.105 22 20 L 22 8 C 22 6.895 21.105 6 20 6 L 8 6 z M 8 8 L 20 8 L 20 20 L 8 20 L 8 8 z" stroke-linecap="round" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+    
+        </div>
+    
+        </div>
+    
+      </section>
+    
     </main>
     
     

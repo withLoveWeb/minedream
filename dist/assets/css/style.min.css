@@ -19,11 +19,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -52,6 +47,10 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: Mojangstudiosfont;
+  src: url(../images/MojangstudiosfontByBapakuy-Regular.ttf);
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -64,15 +63,27 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #b6d4e1;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2rem;
-  line-height: 2.4rem;
-  color: white;
+  line-height: 2.5rem;
+  color: #e2eff1;
+}
+
+a {
+  color: #F3F8F8;
+  text-decoration: none;
 }
 
 .page {
   overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /*Blocks*/
@@ -82,42 +93,111 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0084ff;
-  padding: 25px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #65799b;
 }
 
 .header__nav {
-  max-width: 1200px;
-  width: 100%;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.header__homepage-link {
+  margin-top: 4px;
+  transition: all 0.2s;
+}
+
+.header__homepage-link:hover {
+  opacity: 0.7;
+}
+
 .header__list {
+  margin-left: 13%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   column-gap: 35px;
 }
 
 .name {
-  background-image: url(../images/name-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 1300px;
+  padding: 70px 0 50px;
+  margin-top: 74px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 .name__text {
+  font-family: Mojangstudiosfont;
   font-size: 12rem;
-  margin-right: 18%;
-  color: rgb(65, 194, 82);
+  line-height: 15rem;
+  color: #65799b;
   font-weight: 700;
+}
+
+.ip {
+  padding-top: 50px;
+}
+
+.ip__wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 300px;
+  align-items: center;
+}
+
+.ip__slider {
+  width: 400px;
+  height: 400px;
+  background-color: #000;
+}
+
+.ip__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 22px;
+  align-items: center;
+}
+
+.ip__title {
+  font-size: 5rem;
+  line-height: 6rem;
+  text-transform: uppercase;
+  color: #65799b;
+  font-weight: 700;
+}
+
+.ip__copybar {
+  display: flex;
+  align-items: center;
+}
+
+.ip__input {
+  width: 200px;
+  height: 32px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  border: #65799b 3px solid;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  background-color: #F3F8F8;
+  color: #555273;
+}
+
+.ip__copy-btn {
+  background-color: #F3F8F8;
+  border: #65799b 3px solid;
+  height: 32px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ip__copy-btn:hover {
+  background-color: rgba(243, 248, 248, 0.6);
 }
