@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: $primary-c;
+}
+.header__nav {
+  height: 64px;
+  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__homepage-link {
+  margin-top: 4px;
+  transition: all .2s;
+}
+.header__homepage-link:hover{
+  opacity: 0.7;
+}
+.header__list {
+  margin-left: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 35px;
+}
+.header__list-item {
+}
+.header__list-link {
+}
+.header__reg {
+}
+.header__signin {
+}
+.header__login {
+}

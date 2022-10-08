@@ -1,0 +1,14 @@
+.name{
+  padding: 70px 0 50px;
+  margin-top: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name__text{
+  font-family: Mojangstudiosfont;
+  font-size: 12rem;
+  line-height: 15rem;
+  color: $primary-c;
+  font-weight: 700;
+}
