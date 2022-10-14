@@ -32,10 +32,19 @@
 .header__list-item {
 }
 .header__list-link {
+  color: $white;
+  transition: all .2s;
+}
+.header__list-link:hover {
+  font-size: 2.8rem;
 }
 .header__reg {
 }
 .header__signin {
 }
 .header__login {
+}
+.header__signin:hover,
+.header__login:hover{
+  text-decoration: underline;
 }

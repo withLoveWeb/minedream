@@ -3,8 +3,9 @@
 }
 .ip__wrapper{
   display: flex;
-  justify-content: center;
-  column-gap: 300px;
+  justify-content: space-between;
+  //justify-content: center;
+  //column-gap: 300px;
   align-items: center;
 }
 .ip__slider {
@@ -59,5 +60,5 @@
 }
 
 .ip__copy-btn:hover{
-  background-color: rgba($color: $white, $alpha: .6);
+  background-color: rgba($color: $white, $alpha: .7);
 }
