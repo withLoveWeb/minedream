@@ -6,10 +6,11 @@
   justify-content: center;
 }
 .name__text{
-  font-family: Mojangstudiosfont;
+  font-family: MinecraftSmooth;
   font-size: 12rem;
   line-height: 15rem;
   color: $primary-c;
   font-weight: 700;
-  text-shadow: 3px 3px 5px $dark;
+  text-shadow: 7px 7px 1px $black;
+  color: $white;
 }

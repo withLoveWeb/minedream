@@ -1,0 +1,39 @@
+.modal__wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, .85);
+  
+}
+
+.govno{
+  display: none;
+}
+.modal{
+  padding: 40px 30px;
+  background-image: url(../images/modal.png);
+  width: 432px;
+  height: 534px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__title{
+  font-size: 4rem;
+  color: $dark;
+  font-weight: 500;
+  font-family: MinecraftPixeled;
+  text-transform: uppercase;
+}

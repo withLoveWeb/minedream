@@ -48,8 +48,12 @@ table {
 }
 
 @font-face {
-  font-family: Mojangstudiosfont;
+  font-family: MinecraftSmooth;
   src: url(../images/MojangstudiosfontByBapakuy-Regular.ttf);
+}
+@font-face {
+  font-family: MinecraftPixeled;
+  src: url(../images/minecraft.ttf);
 }
 html {
   font-size: 62.5%;
@@ -63,7 +67,7 @@ html {
 }
 
 body {
-  background-color: #b6d4e1;
+  background-color: #252526;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2rem;
   line-height: 2.5rem;
@@ -71,7 +75,7 @@ body {
 }
 
 a {
-  color: #F3F8F8;
+  color: #d4d4d4;
   text-decoration: none;
 }
 
@@ -93,7 +97,8 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #65799b;
+  background-color: #3e3e42;
+  box-shadow: 0 10px 4px -2px #1e1e1e;
 }
 
 .header__nav {
@@ -121,7 +126,7 @@ a {
 }
 
 .header__list-link {
-  color: #F3F8F8;
+  color: #d4d4d4;
   transition: all 0.2s;
 }
 
@@ -143,12 +148,13 @@ a {
 }
 
 .name__text {
-  font-family: Mojangstudiosfont;
+  font-family: MinecraftSmooth;
   font-size: 12rem;
   line-height: 15rem;
-  color: #65799b;
+  color: #3e3e42;
   font-weight: 700;
-  text-shadow: 3px 3px 5px #555273;
+  text-shadow: 7px 7px 1px #1e1e1e;
+  color: #d4d4d4;
 }
 
 .ip {
@@ -179,7 +185,7 @@ a {
   font-size: 5rem;
   line-height: 6rem;
   text-transform: uppercase;
-  color: #65799b;
+  color: #3e3e42;
   font-weight: 700;
 }
 
@@ -195,17 +201,17 @@ a {
   line-height: 2.5rem;
   font-weight: 500;
   text-align: center;
-  border: #65799b 3px solid;
+  border: #3e3e42 3px solid;
   border-right: none;
   border-radius: 6px 0 0 6px;
   outline: none;
-  background-color: #F3F8F8;
-  color: #555273;
+  background-color: #d4d4d4;
+  color: #252526;
 }
 
 .ip__copy-btn {
-  background-color: #F3F8F8;
-  border: #65799b 3px solid;
+  background-color: #d4d4d4;
+  border: #3e3e42 3px solid;
   height: 32px;
   border-radius: 0 6px 6px 0;
   cursor: pointer;
@@ -213,5 +219,45 @@ a {
 }
 
 .ip__copy-btn:hover {
-  background-color: rgba(243, 248, 248, 0.7);
+  background-color: rgba(212, 212, 212, 0.7);
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.govno {
+  display: none;
+}
+
+.modal {
+  padding: 40px 30px;
+  background-image: url(../images/modal.png);
+  width: 432px;
+  height: 534px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__title {
+  font-size: 4rem;
+  color: #252526;
+  font-weight: 500;
+  font-family: MinecraftPixeled;
+  text-transform: uppercase;
 }

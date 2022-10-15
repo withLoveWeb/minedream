@@ -129,6 +129,20 @@ a {
     column-gap: 35px;
 }
 
+.header__list-link {
+    color: #F3F8F8;
+    transition: all 0.2s;
+}
+
+.header__list-link:hover {
+    font-size: 2.8rem;
+}
+
+.header__signin:hover,
+.header__login:hover {
+    text-decoration: underline;
+}
+
 .name {
     padding: 70px 0 50px;
     margin-top: 74px;
@@ -146,6 +160,7 @@ a {
     line-height: 15rem;
     color: #65799b;
     font-weight: 700;
+    text-shadow: 3px 3px 5px #555273;
 }
 
 .ip {
@@ -155,11 +170,8 @@ a {
 .ip__wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-column-gap: 300px;
-    -moz-column-gap: 300px;
-    column-gap: 300px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
 }
@@ -222,5 +234,5 @@ a {
 }
 
 .ip__copy-btn:hover {
-    background-color: rgba(243, 248, 248, 0.6);
+    background-color: rgba(243, 248, 248, 0.7);
 }

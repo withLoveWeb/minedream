@@ -5,6 +5,7 @@
 html{
   font-size: 62.5%;
   box-sizing: border-box;
+  //overflow: hidden;
 }
 
 *,
@@ -46,3 +47,4 @@ color: $white;
 @import "blocks/name";
 @import "blocks/ip";
 @import "blocks/mods";
+@import "blocks/modal";
